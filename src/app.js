@@ -26,7 +26,7 @@ app.use(express.static(publicDirectoryPath)) // app.get('') nikad nece
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Andrew Mead'
+        name: 'Stanko'
     })
     //render se koristi za handlebar tj. dynamic renderovanje
     //gleda se folder 'views' (mora biti tacan naziv), 
@@ -38,7 +38,7 @@ app.get('', (req, res) => {
 app.get('/about', (req,res) => {
     res.render('about', {
         title: 'About me',
-        name: 'Andrew Mead'
+        name: 'Stanko'
     })
 })
 
@@ -46,7 +46,7 @@ app.get('/help', (req,res) => {
     res.render('help', {
         message: 'Yo help message.',
         title: 'Help',
-        name: 'Andrew Mead'
+        name: 'Stanko'
     })
 })
 
@@ -91,7 +91,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Stanko',
         errorMessage: 'Yo, help 404.'
     })
 })
@@ -99,7 +99,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Stanko',
         errorMessage: 'Yo, 404.'
     })
 })
